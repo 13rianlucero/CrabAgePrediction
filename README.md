@@ -10,8 +10,8 @@ CPSC-483 Machine Learning Class Project
 
 ## Proposal Information
 
-> Please turn in your ***Project Title and Project Proposal*** via Email only, no canvas submission is required. The submission is ungraded, however mandatory for receiving feedback.
->
+- [Project Proposal - google doc url](https://docs.google.com/document/d/1VVzQvpeiNyzevCgvQyJRq_mlwV_HuPxG3Vah3fWLm4c/edit?usp=sharing)
+
 > * Deadline: Tuesday, March 15 @ 11:59 pm
 > * Email subject: **CPSC 483 + Section Number + Project Proposal**
 > * Send me, Neda, Nino via email
