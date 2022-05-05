@@ -21,58 +21,45 @@
 
 # Overview
 
-> 
+> ## **1. Abstract**
 >
-> ## **1. Abstract**                   
->    - `Paper Summary:`
->       - `Machine learning can be used to predict the age of crabs. It can be more accurate than simply weighing a crab to estimate its age. Several different models can be used, though support vector regression was found to be the most accurate in this experiment.`
+> `Paper Summary:`
 >
->>
->>
+> Machine learning can be used to predict the age of crabs. It can be more accurate than simply weighing a crab to estimate its age. Several different models can be used, though support vector regression was found to be the most accurate in this experiment.`
+>
 >> ## **2. Introduction**
->>    - `The problem`
->>    - `Why it's important`
->>    - `Key method and strategy`
 >>
->>>
->>>
+>> - The problem
+>> - Why it's important
+>> - Key method and strategy
+>>
+>>   | *Crab is very tasty and many countries of the world import huge amounts of crabs for consumption every year. The main benefits of crab farming are, labor cost is very low, production cost is comparatively lower and they grow very fast. Commercial crab farming business is developing the lifestyle of the people of coastal areas. By proper care and management we can earn more from crab farming business than shrimp farming. You can raise mud crabs in two systems. Grow out farming and fattening systems. For a commercial crab farmer knowing the right age of the crab helps them decide if and when to harvest the crabs. Beyond a certain age, there is negligible growth in crab's physical characteristics and hence, it is important to time the harvesting to reduce cost and increase profit.* |
+>>   | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+>>
 >>> ## **3. Background**
+>>>
 >>> - `Technologies & ideas used to build our method`
 >>>
->>>>
->>>>
 >>>> ## **4. Methods**
->>>>    - `Approach to solving the problem`
->>>>    - `Key contributions`
->>>>        - `from Justin`
->>>>        - `from Brian`
 >>>>
->>>>>
->>>>>
+>>>> - `Approach to solving the problem`
+>>>> - `Key contributions`
+>>>>   - `from Justin`
+>>>>   - `from Brian`
+>>>>
 >>>>> ## **5. Experiments**
->>>>>    - `Description of ML process workflow`
->>>>>      - `Featuring the project source code to compliment the experiment process description`
 >>>>>
->>>>>>
->>>>>>
+>>>>> - `Description of ML process workflow`
+>>>>>   - `Featuring the project source code to compliment the experiment process description`
+>>>>>
 >>>>>> ## **6. Conclusion**
->>>>>>    - `Summary of contributions & results`
->>>>>>    - `Future work`
 >>>>>>
->>>>>>> 
->>>>>>>
+>>>>>> - `Summary of contributions & results`
+>>>>>> - `Future work`
+>>>>>>
 >>>>>>> ## **7. References**
->>>>>>>    - `All of our project resources`
 >>>>>>>
->>>>>>>
->>>>>>>
->>>>>>>
->>>>>>>
->>>>>>>
->>>>>>>
->>>>>>>
->>>>>>>
->>>>>>>
+>>>>>>> - `All of our project resources`
 >>>>>>>
 >>>>>>
 >>>>>
@@ -81,15 +68,15 @@
 >>
 
 ## Abstract
+
 > Machine learning can be used to predict the age of crabs. It can be more accurate than simply weighing a crab to estimate its age. Several different models can be used, though support vector regression was found to be the most accurate in this experiment.
 
-
 ## Introduction
-> Crab is very tasty and many countries of the world import huge amounts of crabs for consumption every year. The main benefits of crab farming are, labor cost is very low, production cost is comparatively lower and they grow very fast. Commercial crab farming business is developing the lifestyle of the people of coastal areas. By proper care and management we can earn more from crab farming business than shrimp farming. You can raise mud crabs in two systems. Grow out farming and fattening systems. For a commercial crab farmer knowing the right age of the crab helps them decide if and when to harvest the crabs. Beyond a certain age, there is negligible growth in crab's physical characteristics and hence, it is important to time the harvesting to reduce cost and increase profit.
 
 ## Background
 
 **Technologies used:**
+
 > - K-Nearest Neighbours (KNN) - Machine Learning Model
 > - Multiple Linear Regression - Machine Learning Model
 > - Support Vector Machine (SVM) - Machine Learning Model
@@ -103,8 +90,10 @@
 
 **Dataset/Data Preprocessing**
 
-> The dataset that is being used was taken from Kaggle [1]. It contains over 1000 samples and nine features each. The features are "Sex", "Length", "Diameter", "Height", "Weight", "Shucked Weight", "Viscera Weight", "Shell Weight", and "Age". Fortunately, all of the data was present and no values were missing. In the case that values were missing, that specific data point could be taken out in order to avoid any errors during calculations. Since "Sex" had a value of either "M" for male, "F" for female, and "I" for indeterminate, conversions were necessary in order to give the feature a numerical value. Male was given a numerical value of 1, female was given 2, and indeterminate was given 1.5. These values were stored into a new feature called "SexValue".
+> ### -
 >
+> The dataset that is being used was taken from Kaggle [1]. It contains over 1000 samples and nine features each. The features are "Sex", "Length", "Diameter", "Height", "Weight", "Shucked Weight", "Viscera Weight", "Shell Weight", and "Age". Fortunately, all of the data was present and no values were missing. In the case that values were missing, that specific data point could be taken out in order to avoid any errors during calculations. Since "Sex" had a value of either "M" for male, "F" for female, and "I" for indeterminate, conversions were necessary in order to give the feature a numerical value. Male was given a numerical value of 1, female was given 2, and indeterminate was given 1.5. These values were stored into a new feature called "SexValue".
+
 > To perform feature selection, the Pearson correlation coefficient was found for each of the eight values in relation to "Age". The results are in the table below.
 
 | SexValue       | 0.0337 |
