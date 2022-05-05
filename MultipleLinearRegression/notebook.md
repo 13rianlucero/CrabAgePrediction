@@ -1,15 +1,20 @@
 # CrabAgePrediction
 
 **CLASS:**  `CPSC-483 Machine Learning Section-02`
+
 **LAST UPDATE:**  `May 5, 2022`
+
 **PROJECT NAME:** `Crab Age Prediction`
+
 **PROJECT GROUP:**
+
 | Name                       | Email                                 | Student              |
 | -------------------------- | ------------------------------------- | -------------------- |
 | Brian Lucero               | 13rianlucero@csu.fullerton.edu        | Undergraduate        |
 | Justin Heng                | justinheng@csu.fullerton.edu          | Graduate             |
 
 **PROJECT PAPER:**   [Here](https://github.com/13rianlucero/CrabAgePrediction/blob/main/FirstDraft/Crab%20Age%20Prediction%20Paper.pdf)
+
 **PROJECT GITHUB REPOSITORY:** [Here](https://github.com/13rianlucero/CrabAgePrediction)
 
 
