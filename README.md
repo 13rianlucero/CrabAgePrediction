@@ -92,8 +92,6 @@
 >>>
 >>> `<br /><br />`
 >>>
->>> 
->>>
 >>
 
 ## **4. Methods**
@@ -245,51 +243,34 @@
 
 # Code
 
-> **[CONTENTS:]()**
+**[CONTENTS:]()**
 
-> **[1-INITIAL_SETUP]()**
+**[1-INITIAL_SETUP]()**
 
-> - Import Libraries
+- **Import Libraries**
+- **Import Dataset**
 
-> - Import Dataset
+**[2-DATA-PREPROCESSING]()**
 
-> **[2-DATA-PREPROCESSING]()**
+- **Convert Sex Categorical value into Numerical Value**
+- **Pearson correlation for every feature**
 
-> - Convert Sex Categorical value into Numerical Value
+**[3-TRAIN_TEST_SPLIT]()**
 
-> - Pearson correlation for every feature
+- Split the data into* Test set & Train set
+- Determine value for K in KNN Model
 
-> **[3-TRAIN_TEST_SPLIT]()**
+**[4-BUILD_AND_TRAIN_MODELS)**
 
-> - Split the data into* Test set & Train set
+- Build and Train
 
-> - Determine value for K in KNN Model
+**[6-PLOT_EACH_INDIVIDUAL_MODEL]()**:
 
-> **[4-BUILD_AND_TRAIN_MODELS]()**
+* KNN2.
+* MLR
+* SVR
 
-> - K-Nearest Neighbors -- KNN:
-
-> - Multiple Linear Regression -- MLR:
-
-> - Support Vector Regression -- SVR:
-
-- **[5-PLOT_TEST_RESULTS]()**
-
-> - Plot the [Predicted Age] against the [Actual Age] for the Test Set
-
-> - Plot the Aggreagate Summary (3 model plot)
-
-> - Plot the Aggreagate Summary (3 model plot)
-
-> **[6-PLOT_EACH_INDIVIDUAL_MODEL]()**:
-
-> - `1. KNN`
-
-> - `2. MLR`
-
-> - `3. SVR`
-
-> **[MAIN.PY]()**
+**[MAIN.PY]()**
 
 ```python
 
