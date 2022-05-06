@@ -52,15 +52,11 @@ error_rate = []
 y_test2 = numpy.ravel(y_test)
 for k in range(1, 31):
     neigh = KNeighborsClassifier(n_neighbors=k)
-
     neigh.fit(X_train, numpy.ravel(y_train))
-
     knn_predict = neigh.predict(X_test)
     error_knn = 0
-
     for x in range(0, 1168):
         error_knn += abs(knn_predict[x] - y_test2[x])
-
     error_rate.append(error_knn/1169)
 
 plt.plot(range(1, 31), error_rate)
@@ -77,9 +73,7 @@ knn_predict = neigh.predict(X_test)
 #Multiple Linear Regression
 regressor = LinearRegression()
 regressor.fit(X_train, y_train)
-
 y_pred = regressor.predict(X_test)
-
 score = r2_score(y_test,y_pred)
 
 
@@ -94,6 +88,7 @@ plt.plot(range(1, 1169), y_pred)
 plt.plot(range(1, 1169), regr_predict)
 plt.plot(range(1, 1169), numpy.ravel(y_test))
 plt.xlim([0, 50])
+
 #plt.xlim([60, 90])
 plt.legend(["KNN Predicted Age", "LR Predicted Age", "SVR Predicted Age",  "Actual Age"])
 plt.ylabel("Age in months")
