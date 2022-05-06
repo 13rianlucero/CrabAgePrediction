@@ -1,5 +1,12 @@
 # CrabAgePrediction
 
+<p>
+    <img src="https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white" alt=""/>
+    <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="" />
+    <img src="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white" alt="" />
+    <img src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green" alt="" />
+</p>
+
 **CLASS:**  `CPSC-483 Machine Learning Section-02`
 
 **LAST UPDATE:**  `May 5, 2022`
@@ -9,7 +16,7 @@
 **PROJECT GROUP:**
 
 | Name         | Email                          | Student       |
-| ------------ | ------------------------------ | ------------- |
+| :----------- | :----------------------------- | :------------ |
 | Brian Lucero | 13rianlucero@csu.fullerton.edu | Undergraduate |
 | Justin Heng  | justinheng@csu.fullerton.edu   | Graduate      |
 
@@ -21,19 +28,35 @@
 
 # Overview
 
-> ## **1. Abstract**
+## **1. Abstract**
+
+---
+
+> ---
 >
 > ###### Paper Summary ✔️
 >
-> Machine learning can be used to predict the age of crabs. It can be more accurate than simply weighing a crab to estimate its age. Several different models can be used, though support vector regression was found to be the most accurate in this experiment.
+> | Machine learning can be used to predict the age of crabs. It can be more accurate than simply weighing a crab to estimate its age. Several different models can be used, though support vector regression was found to be the most accurate in this experiment. |
+> | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 >
->> ## **2. Introduction**
+> <br />
+
+## **2. Introduction**
+
+---
+
+>> ---
 >>
 >> | The Problem  ✔️                                                                                                                                                                                                                     | Why it's important?  ✔️                                                                                                                                                                 | Our Solution Strategy  ✔️                                                                                                                                                                                                  |
 >> | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 >> | <br /><br />*It is quite difficult to determine a crab's age due to their molting cycles which happen throughout their whole life. Essentially, the failure to harvest at an ideal age, increases cost and crab lives go to waste.* | <br /><br />*Beyond a certain age, there is negligible growth in crab's physical characteristics and hence, it is important to time the harvesting to reduce cost and increase profit.* | <br /><br />Prepare crab data and use it to train several machine learning models. Thus, given certain physcial chraracteristics and the corresponding values, the ML models will accurately determine the age of the crabs. |
 >>
->>> ## **3. Background**
+>> `<br /><br />`
+>>
+
+## **3. Background**
+
+>>> ---
 >>>
 >>> ###### **Process Activities ✔️**
 >>>
@@ -64,7 +87,15 @@
 >>> - Performance Metrics
 >>> - Compare ML Models using Metrics
 >>>
->>>> ## **4. Methods**
+>>> `<br /><br />`
+>>>
+>>> ---
+>>>
+>>
+
+## **4. Methods**
+
+>>>> ---
 >>>>
 >>>> ###### Approach ✔️
 >>>>
@@ -78,11 +109,19 @@
 >>>> - Brian
 >>>>   - `MLR`
 >>>>
->>>>> ## **5. Experiments**
+>>>> <br />
+>>>>
+>>>
+>>
+
+## **5. Experiments**
+
+>>>>> ---
 >>>>>
 >>>>> ###### Prediction System Development Workflow ✔️
 >>>>>
 >>>>> ![1651798210121.png](image/README/1651798210121.png)
+>>>>> `<br />`
 >>>>>
 >>>>> ###### Predicition Model Workflow ✔️
 >>>>>
@@ -105,11 +144,21 @@
 >>>>> | Use model to refine the results                                                                                 | Use model to refine the results                                                                                 | Use model to refine the results                                                                                 |
 >>>>> | Draw Conclusions                                                                                                | Draw Conclusions                                                                                                | Draw Conclusions                                                                                                |
 >>>>>
->>>>> ###### Code ✔️
+>>>>> ### ***Code*** ✔️
 >>>>>
->>>>>> ## **6. Conclusion**
+>>>>> `Included in the Code Cells Further below this one`
+>>>>>
+>>>>> <br />
+>>>>>
+>>>>
+>>>
+>>
+
+## **6. Conclusion**
+
+>>>>>> ---
 >>>>>>
->>>>>> ###### Summary of Results ✔️
+>>>>>> ### ***Summary of Results*** ✔️
 >>>>>>
 >>>>>> Overall, the models were able to predict the age of crabs reasonably well. On average, the predictions were off by about 1.5 months. Although support vector regression performed slightly better than the other two models, it was still close enough that any of the models could be used with satisfactory results.
 >>>>>>
@@ -125,13 +174,21 @@
 >>>>>> | K-nearest Neighbor                | ML       | 1.610          |
 >>>>>> | Multiple Linear Regression        | ML       | 1.560          |
 >>>>>>
->>>>>> ###### Future work ✔️
+>>>>>> ### ***Future work*** ✔️
 >>>>>>
 >>>>>> Predicting the age of a crab becomes less accurate the longer a crab has matured. To circumvent this, the dataset could be further preprocessed so that any crab over the age of 12 months will be set to 12 months.
 >>>>>>
 >>>>>> This would greatly increase the accuracy of the machine learning models though the models would no longer be able to predict any ages over 12 months. Since the purpose is to find which crabs are harvestable, this may be a good compromise.
+>>>>>> `<br /><br />`
 >>>>>>
->>>>>>> ## **7. References**
+>>>>>
+>>>>
+>>>
+>>
+
+## **7. References**
+
+>>>>>>> ---
 >>>>>>>
 >>>>>>> <p align="center">
 >>>>>>>    <img src="https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white" alt=""/>
@@ -140,43 +197,97 @@
 >>>>>>> <img src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green" alt="" />
 >>>>>>> </p>
 >>>>>>>
->>>>>>> ###### Links ✔️
+>>>>>>> ### ***Links ✔️***
 >>>>>>>
 >>>>>>> [1]      [https://www.kaggle.com/datasets/sidhus/crab-age-prediction](https://www.kaggle.com/datasets/sidhus/crab-age-prediction)
 >>>>>>>
->>>>>>> [2] [https://scikit-learn.org/stable/modules/svm.html](https://scikit-learn.org/stable/modules/svm.html)
+>>>>>>> [2]     [https://scikit-learn.org/stable/modules/svm.html](https://scikit-learn.org/stable/modules/svm.html)
 >>>>>>>
->>>>>>> [3] [https://repository.library.noaa.gov/view/noaa/16273/noaa_16273_DS4.pdf](https://repository.library.noaa.gov/view/noaa/16273/noaa_16273_DS4.pdf)
+>>>>>>> [3]      [https://repository.library.noaa.gov/view/noaa/16273/noaa_16273_DS4.pdf](https://repository.library.noaa.gov/view/noaa/16273/noaa_16273_DS4.pdf)
 >>>>>>>
->>>>>>> [4] [https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html](https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html)
+>>>>>>> [4]     [https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html](https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html)
 >>>>>>>
->>>>>>> [5] [https://github.com/krishnaik06/Multiple-Linear-Regression](https://github.com/krishnaik06/Multiple-Linear-Regression)
+>>>>>>> [5]     [https://github.com/krishnaik06/Multiple-Linear-Regression](https://github.com/krishnaik06/Multiple-Linear-Regression)
 >>>>>>>
->>>>>>> [6] [https://github.com/13rianlucero/CrabAgePrediction](https://github.com/13rianlucero/CrabAgePrediction)
+>>>>>>> [6]     [https://github.com/13rianlucero/CrabAgePrediction](https://github.com/13rianlucero/CrabAgePrediction)
 >>>>>>>
->>>>>>> __
+>>>>>>> `<br /><br />`
+>>>>>>>
+>>>>>>> ---
 >>>>>>>
 >>>>>>
->>>>>> __
+>>>>>> ---
 >>>>>>
 >>>>>
->>>>> __
+>>>>> ---
 >>>>>
 >>>>
->>>> __
+>>>> ---
 >>>>
 >>>
->>> __
+>>> ---
 >>>
 >>
->> __
+>> ---
 >>
 >
-> __
+> ---
 
+`<br /><br />`
 ---
 
-## Code
+`<br /><br />`
+
+# Code
+
+
+> **[CONTENTS:]()**
+
+> **[1-INITIAL_SETUP]()**
+
+> - Import Libraries
+
+> - Import Dataset
+
+> **[2-DATA-PREPROCESSING]()**
+
+> - Convert Sex Categorical value into Numerical Value
+
+> - Pearson correlation for every feature
+
+> **[3-TRAIN_TEST_SPLIT]()**
+
+> - Split the data into* Test set & Train set
+
+> - Determine value for K in KNN Model
+
+> **[4-BUILD_AND_TRAIN_MODELS]()**
+
+> - K-Nearest Neighbors -- KNN:
+
+> - Multiple Linear Regression -- MLR:
+
+> - Support Vector Regression -- SVR:
+
+- **[5-PLOT_TEST_RESULTS]()**
+
+> - Plot the [Predicted Age] against the [Actual Age] for the Test Set
+
+> - Plot the Aggreagate Summary (3 model plot)
+
+> - Plot the Aggreagate Summary (3 model plot)
+
+> **[6-PLOT_EACH_INDIVIDUAL_MODEL]()**:
+
+> - `1. KNN`
+
+> - `2. MLR`
+
+> - `3. SVR`
+
+> **[MAIN.PY]()**
+
+
 
 ```python
 
@@ -385,7 +496,7 @@ print (error_svr/1169)
 
 ```
 
-### Proposal Information
+# Proposal Information
 
 > * Deadline: Tuesday, March 15 @ 11:59 pm
 > * Email subject: **CPSC 483 + Section Number + Project Proposal**
@@ -397,7 +508,7 @@ print (error_svr/1169)
 >
 > The submission will be followed by a project check-in due on April 15 @ 11:59 pm.
 
-## Helpful Resources for the Project
+# Helpful Resources for the Project
 
 | Resource                   | URL                                                              |
 | -------------------------- | ---------------------------------------------------------------- |
@@ -408,5 +519,3 @@ print (error_svr/1169)
 | Stanford ML Project Ideas  | [https://cs229.stanford.edu/projectIdeas_2012.html]()               |
 | UCI ML Repository          | [https://archive.ics.uci.edu/ml/index.php]()                        |
 | Getting Started with LaTeX | [https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html]() |
-
-# CrabAgePrediction

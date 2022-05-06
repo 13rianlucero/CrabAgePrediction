@@ -1,5 +1,12 @@
 # CrabAgePrediction
 
+<p>
+    <img src="https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white" alt=""/>
+    <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="" />
+    <img src="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white" alt="" />
+    <img src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green" alt="" />
+</p>
+
 **CLASS:**  `CPSC-483 Machine Learning Section-02`
 
 **LAST UPDATE:**  `May 5, 2022`
@@ -19,11 +26,11 @@
 
 ---
 
-# **Overview**
+# Overview
 
 > ## **1. Abstract**
 >
-> ###### **Paper Summary** ✔️
+> ###### Paper Summary ✔️
 >
 > Machine learning can be used to predict the age of crabs. It can be more accurate than simply weighing a crab to estimate its age. Several different models can be used, though support vector regression was found to be the most accurate in this experiment.
 >
@@ -82,43 +89,7 @@
 >>>>>
 >>>>> ###### Prediction System Development Workflow ✔️
 >>>>>
->>>>> ```mermaid
->>>>> graph TD
->>>>>
->>>>> A[Problem Domain: Age Prediction of Crabs]
->>>>> B[Data Representation: Physical Attribute Values]
->>>>> C[Objective Function: Average Error Rate on Training Crab Data]
->>>>> D[Evalutation: Average Error Rate on Test Crab Data]
->>>>> E[Learning Algorithm: KNN, MLR, SVM]
->>>>>
->>>>> F[Predictive Model: KNN Model]
->>>>> G[Predictive Model: MLR Model]
->>>>> H[Predictive Model: SVM Model]
->>>>>
->>>>> I[Prediction System: Aggregate Model Results]
->>>>> J[Useful Predictions: Low Bias, Low Variance]
->>>>> K[Domain Insights: Types of Crabs]
->>>>>
->>>>> A -- Discrete and Continuous --> B
->>>>> A -- Training dataset --> C
->>>>> A -- Test dataset --> D
->>>>>
->>>>> B --> E
->>>>> C --> E 
->>>>> D --> E
->>>>>
->>>>> E --> F
->>>>> E --> G 
->>>>> E --> H
->>>>>
->>>>> F --> I
->>>>> G --> I
->>>>> H --> I
->>>>>
->>>>> I --> J
->>>>> I --> K
->>>>>
->>>>> ```
+>>>>> ![1651798210121.png](image/README/1651798210121.png)
 >>>>>
 >>>>> ###### Predicition Model Workflow ✔️
 >>>>>
@@ -190,138 +161,259 @@
 >>>>>>>
 >>>>>>> [6] [https://github.com/13rianlucero/CrabAgePrediction](https://github.com/13rianlucero/CrabAgePrediction)
 >>>>>>>
->>>>>>> ---
+>>>>>>> __
 >>>>>>>
 >>>>>>
->>>>>> ---
+>>>>>> __
 >>>>>>
 >>>>>
->>>>> ---
+>>>>> __
 >>>>>
 >>>>
->>>> ---
+>>>> __
 >>>>
 >>>
->>> ---
+>>> __
 >>>
 >>
->> ---
+>> __
 >>
 >
-> ---
+> __
 
 ---
 
 ## Code
 
 ```python
+
 import pandas
+
 import numpy
+
 from scipy import stats
+
 from matplotlib import pyplot as plt
+
 from sklearn.model_selection import train_test_split
+
 from sklearn.neighbors import KNeighborsClassifier
+
 from sklearn import svm
+
 from sklearn.linear_model import LinearRegression
+
 from sklearn.metrics import r2_score
 
+
 data = pandas.read_csv(r"CrabAgePrediction.csv").dropna(axis=0)
+
 print(data.columns)
-data["SexValue"] = 0 #create a new column
+
+data["SexValue"] =0#create a new column
+
 
 for index, row in data.iterrows():
-    #convert male or female to a numerical value     Male=1, Female=2, Indeterminate=1.5
-    if row["Sex"] == "M":
-        data.iloc[index, 9] = 1
-    elif row["Sex"] == "F":
-        data.iloc[index, 9] = 2
-    else:
-        data.iloc[index, 9] = 1.5
+
+#convert male or female to a numerical value     Male=1, Female=2, Indeterminate=1.5
+
+if row["Sex"] =="M":
+
+        data.iloc[index, 9] =1
+
+elif row["Sex"] =="F":
+
+        data.iloc[index, 9] =2
+
+else:
+
+        data.iloc[index, 9] =1.5
+
 
 #putting all our data together and dropping Sex for SexValue
+
 data = data[["SexValue", "Length", "Diameter", "Height", "Weight", "Shucked Weight", "Viscera Weight", "Shell Weight", "Age"]]
+
 X = data[["Length", "Diameter", "Height", "Weight", "Shucked Weight", "Viscera Weight", "Shell Weight"]]
+
 y = data[["Age"]]
 
+
 #Pearson correlation for every feature
+
 col_cor = stats.pearsonr(data["SexValue"], y)
+
 col1_cor = stats.pearsonr(data["Length"], y)
+
 col2_cor = stats.pearsonr(data["Diameter"], y)
+
 col3_cor = stats.pearsonr(data["Height"], y)
+
 col4_cor = stats.pearsonr(data["Weight"], y)
+
 col5_cor = stats.pearsonr(data["Shucked Weight"], y)
+
 col6_cor = stats.pearsonr(data["Viscera Weight"], y)
+
 col7_cor = stats.pearsonr(data["Shell Weight"], y)
+
 print(col_cor)
+
 print(col1_cor)
+
 print(col2_cor)
+
 print(col3_cor)
+
 print(col4_cor)
+
 print(col5_cor)
+
 print(col6_cor)
+
 print(col7_cor)
 
+
 #split the data into test and train set
+
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=132)
 
+
 #n_neighbors plot
+
 error_rate = []
+
 y_test2 = numpy.ravel(y_test)
-for k in range(1, 31):
+
+for k inrange(1, 31):
+
     neigh = KNeighborsClassifier(n_neighbors=k)
+
     neigh.fit(X_train, numpy.ravel(y_train))
+
     knn_predict = neigh.predict(X_test)
-    error_knn = 0
-    for x in range(0, 1168):
-        error_knn += abs(knn_predict[x] - y_test2[x])
+
+    error_knn =0
+
+for x inrange(0, 1168):
+
+        error_knn +=abs(knn_predict[x] - y_test2[x])
+
     error_rate.append(error_knn/1169)
 
+
 plt.plot(range(1, 31), error_rate)
+
 plt.xlabel("n_neighbors")
+
 plt.ylabel("error_rate")
+
 plt.title("Average error vs n_neighbors")
+
 plt.show()
 
+
 #KNN
+
 neigh = KNeighborsClassifier(n_neighbors=20)
+
 neigh.fit(X_train, numpy.ravel(y_train))
+
 knn_predict = neigh.predict(X_test)
 
+
 #Multiple Linear Regression
+
 regressor = LinearRegression()
+
 regressor.fit(X_train, y_train)
+
 y_pred = regressor.predict(X_test)
+
 score = r2_score(y_test,y_pred)
 
 
+
 #SVR
+
 regr = svm.SVR()
+
 regr.fit(X_train, numpy.ravel(y_train))
+
 regr_predict = regr.predict(X_test)
 
+
 # #plot the predicted age against the actual age for the test set
+
 plt.plot(range(1, 1169), knn_predict)
+
 plt.plot(range(1, 1169), y_pred)
+
 plt.plot(range(1, 1169), regr_predict)
+
 plt.plot(range(1, 1169), numpy.ravel(y_test))
+
 plt.xlim([0, 50])
 
+
 #plt.xlim([60, 90])
+
 plt.legend(["KNN Predicted Age", "LR Predicted Age", "SVR Predicted Age",  "Actual Age"])
+
 plt.ylabel("Age in months")
+
 plt.title("Predicted vs Actual Crab Age")
+
 plt.show()
 
-error_knn = 0
-error_mlr = 0
-error_svr = 0
+
+error_knn =0
+
+error_mlr =0
+
+error_svr =0
+
 y_test2 = numpy.ravel(y_test)
-for x in range(0, 1168):
-    error_knn += abs(knn_predict[x] - y_test2[x])
-    error_mlr += abs(y_pred[x] - y_test2[x])
-    error_svr += abs(regr_predict[x] - y_test2[x])
+
+for x inrange(0, 1168):
+
+    error_knn +=abs(knn_predict[x] - y_test2[x])
+
+    error_mlr +=abs(y_pred[x] - y_test2[x])
+
+    error_svr +=abs(regr_predict[x] - y_test2[x])
+
 
 print (error_knn/1169)
+
 print (error_mlr/1169)
+
 print (error_svr/1169)
+
 ```
+
+### Proposal Information
+
+> * Deadline: Tuesday, March 15 @ 11:59 pm
+> * Email subject: **CPSC 483 + Section Number + Project Proposal**
+> * Send me, Neda, Nino via email
+> * Submit via email. Emails:
+>   - [kasood@fullerton.edu](mailto:kasood@fullerton.edu)
+>   - [neda.khanaki@csu.fullerton.edu](mailto:neda.khanaki@csu.fullerton.edu)
+>   - [nvilagi@csu.fullerton.edu](mailto:nvilagi@csu.fullerton.edu)
+>
+> The submission will be followed by a project check-in due on April 15 @ 11:59 pm.
+
+## Helpful Resources for the Project
+
+| Resource                   | URL                                                              |
+| -------------------------- | ---------------------------------------------------------------- |
+| Sci-kit Learn              | [https://scikit-learn.org/stable/]()                                |
+| Weka                       | [https://www.cs.waikato.ac.nz/ml/weka/]()                           |
+| Kaggle ML Competitions     | [https://www.kaggle.com/]()                                         |
+| Stanford ML Projects       | [https://cs229.stanford.edu/projects2016.html]()                    |
+| Stanford ML Project Ideas  | [https://cs229.stanford.edu/projectIdeas_2012.html]()               |
+| UCI ML Repository          | [https://archive.ics.uci.edu/ml/index.php]()                        |
+| Getting Started with LaTeX | [https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html]() |
+
+# CrabAgePrediction
