@@ -15,10 +15,11 @@
 
 **PROJECT GROUP:**
 
-| Name         | Email                          | Student       |
-| :----------- | :----------------------------- | :------------ |
+
+| Name | Email | Student |
+| :- | :- | :- |
 | Brian Lucero | 13rianlucero@csu.fullerton.edu | Undergraduate |
-| Justin Heng  | justinheng@csu.fullerton.edu   | Graduate      |
+| Justin Heng | justinheng@csu.fullerton.edu | Graduate |
 
 **PROJECT PAPER:**   [Here](https://github.com/13rianlucero/CrabAgePrediction/blob/main/FirstDraft/Crab%20Age%20Prediction%20Paper.pdf)
 
@@ -34,10 +35,11 @@
 
 > ---
 >
-> ###### Paper Summary ✔️
+> ### Paper Summary ✔️
+>
 >
 > | Machine learning can be used to predict the age of crabs. It can be more accurate than simply weighing a crab to estimate its age. Several different models can be used, though support vector regression was found to be the most accurate in this experiment. |
-> | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+> | :- |
 >
 > <br />
 
@@ -47,8 +49,9 @@
 
 >> ---
 >>
->> | The Problem  ✔️                                                                                                                                                                                                                     | Why it's important?  ✔️                                                                                                                                                                 | Our Solution Strategy  ✔️                                                                                                                                                                                                  |
->> | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+>>
+>> | The Problem  ✔️ | Why it's important?  ✔️ | Our Solution Strategy  ✔️ |
+>> | :- | :- | :- |
 >> | <br /><br />*It is quite difficult to determine a crab's age due to their molting cycles which happen throughout their whole life. Essentially, the failure to harvest at an ideal age, increases cost and crab lives go to waste.* | <br /><br />*Beyond a certain age, there is negligible growth in crab's physical characteristics and hence, it is important to time the harvesting to reduce cost and increase profit.* | <br /><br />Prepare crab data and use it to train several machine learning models. Thus, given certain physcial chraracteristics and the corresponding values, the ML models will accurately determine the age of the crabs. |
 >>
 >> `<br /><br />`
@@ -58,7 +61,7 @@
 
 >>> ---
 >>>
->>> ###### **Process Activities ✔️**
+>>> ### **Process Activities ✔️**
 >>>
 >>> - Feature Selection & Representation
 >>> - Evaluation on variety of methods
@@ -75,13 +78,13 @@
 >>> - Feature Selection
 >>> - Choose ML Models
 >>>
->>> ###### Models ✔️
+>>> ### Models ✔️
 >>>
 >>> - K-Nearest Neighbours (KNN)
 >>> - Multiple Linear Regression (MLR)
 >>> - Support Vector Machine (SVM)
 >>>
->>> ###### Analysis ✔️
+>>> ### Analysis ✔️
 >>>
 >>> - Evaluate Results
 >>> - Performance Metrics
@@ -97,11 +100,11 @@
 
 >>>> ---
 >>>>
->>>> ###### Approach ✔️
+>>>> ### Approach ✔️
 >>>>
 >>>> - Prediction System using 3 main ML Models
 >>>>
->>>> ###### Key Contributions ✔️
+>>>> ### Key Contributions ✔️
 >>>>
 >>>> - Justin
 >>>>   - `KNN`
@@ -118,31 +121,32 @@
 
 >>>>> ---
 >>>>>
->>>>> ###### Prediction System Development Workflow ✔️
+>>>>> ##### Prediction System Development Workflow ✔️
 >>>>>
 >>>>> ![1651798210121.png](image/README/1651798210121.png)
 >>>>> `<br />`
 >>>>>
->>>>> ###### Predicition Model Workflow ✔️
+>>>>> ##### Predicition Model Workflow ✔️
 >>>>>
->>>>> | KNN                                                                                                             | MLR                                                                                                             | SVM                                                                                                             |
->>>>> | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
->>>>> | Import Libraries                                                                                                | Import Libraries                                                                                                | Import Libraries                                                                                                |
->>>>> | Import Dataset, create dataframe                                                                                | Import Dataset, create dataframe                                                                                | Import Dataset, create dataframe                                                                                |
->>>>> | Data Preprocessing                                                                                              | Data Preprocessing                                                                                              | Data Preprocessing                                                                                              |
+>>>>>
+>>>>> | KNN | MLR | SVM |
+>>>>> | - | - | - |
+>>>>> | Import Libraries | Import Libraries | Import Libraries |
+>>>>> | Import Dataset, create dataframe | Import Dataset, create dataframe | Import Dataset, create dataframe |
+>>>>> | Data Preprocessing | Data Preprocessing | Data Preprocessing |
 >>>>> | Check for Missing data, Bad Data, Outliers, Data Types, Choose Classifier, Data Organization, Data Scaling, etc | Check for Missing data, Bad Data, Outliers, Data Types, Choose Classifier, Data Organization, Data Scaling, etc | Check for Missing data, Bad Data, Outliers, Data Types, Choose Classifier, Data Organization, Data Scaling, etc |
->>>>> | Feature Selection                                                                                               | Feature Selection                                                                                               | Feature Selection                                                                                               |
->>>>> | Train-Test Split                                                                                                | Train-Test Split                                                                                                | Train-Test Split                                                                                                |
->>>>> | Build Algorithm                                                                                                 | Build Algorithm                                                                                                 | Build Algorithm                                                                                                 |
->>>>> | Train Algorithm                                                                                                 | Train Algorithm                                                                                                 | Train Algorithm                                                                                                 |
->>>>> | Test Algorithm                                                                                                  | Test Algorithm                                                                                                  | Test Algorithm                                                                                                  |
->>>>> | Produce Performance Metrics from Tests                                                                          | Produce Performance Metrics from Tests                                                                          | Produce Performance Metrics from Tests                                                                          |
->>>>> | Evaluate Results                                                                                                | Evaluate Results                                                                                                | Evaluate Results                                                                                                |
->>>>> | Tune Algorithm                                                                                                  | Tune Algorithm                                                                                                  | Tune Algorithm                                                                                                  |
->>>>> | Retest & Re-Analayze                                                                                            | Retest & Re-Analayze                                                                                            | Retest & Re-Analayze                                                                                            |
->>>>> | Predicition Model defined from new train-test-analyze cycle                                                     | Predicition Model defined from new train-test-analyze cycle                                                     | Predicition Model defined from new train-test-analyze cycle                                                     |
->>>>> | Use model to refine the results                                                                                 | Use model to refine the results                                                                                 | Use model to refine the results                                                                                 |
->>>>> | Draw Conclusions                                                                                                | Draw Conclusions                                                                                                | Draw Conclusions                                                                                                |
+>>>>> | Feature Selection | Feature Selection | Feature Selection |
+>>>>> | Train-Test Split | Train-Test Split | Train-Test Split |
+>>>>> | Build Algorithm | Build Algorithm | Build Algorithm |
+>>>>> | Train Algorithm | Train Algorithm | Train Algorithm |
+>>>>> | Test Algorithm | Test Algorithm | Test Algorithm |
+>>>>> | Produce Performance Metrics from Tests | Produce Performance Metrics from Tests | Produce Performance Metrics from Tests |
+>>>>> | Evaluate Results | Evaluate Results | Evaluate Results |
+>>>>> | Tune Algorithm | Tune Algorithm | Tune Algorithm |
+>>>>> | Retest & Re-Analayze | Retest & Re-Analayze | Retest & Re-Analayze |
+>>>>> | Predicition Model defined from new train-test-analyze cycle | Predicition Model defined from new train-test-analyze cycle | Predicition Model defined from new train-test-analyze cycle |
+>>>>> | Use model to refine the results | Use model to refine the results | Use model to refine the results |
+>>>>> | Draw Conclusions | Draw Conclusions | Draw Conclusions |
 >>>>>
 >>>>> ### ***Code*** ✔️
 >>>>>
@@ -168,11 +172,12 @@
 >>>>>>
 >>>>>> This would greatly increase the accuracy of the machine learning models though the models would no longer be able to predict any ages over 12 months. Since the purpose is to find which crabs are harvestable, this may be a good compromise.
 >>>>>>
->>>>>> | Model                             | Type     | Error (months) |
->>>>>> | --------------------------------- | -------- | -------------- |
->>>>>> | Linear Regression (Weight vs Age) | Baseline | 1.939          |
->>>>>> | K-nearest Neighbor                | ML       | 1.610          |
->>>>>> | Multiple Linear Regression        | ML       | 1.560          |
+>>>>>>
+>>>>>> | Model | Type | Error (months) |
+>>>>>> | - | - | - |
+>>>>>> | Linear Regression (Weight vs Age) | Baseline | 1.939 |
+>>>>>> | K-nearest Neighbor | ML | 1.610 |
+>>>>>> | Multiple Linear Regression | ML | 1.560 |
 >>>>>>
 >>>>>> ### ***Future work*** ✔️
 >>>>>>
@@ -234,12 +239,11 @@
 > ---
 
 `<br /><br />`
----
+--------------
 
 `<br /><br />`
 
 # Code
-
 
 > **[CONTENTS:]()**
 
@@ -286,8 +290,6 @@
 > - `3. SVR`
 
 > **[MAIN.PY]()**
-
-
 
 ```python
 
@@ -510,12 +512,13 @@ print (error_svr/1169)
 
 # Helpful Resources for the Project
 
-| Resource                   | URL                                                              |
-| -------------------------- | ---------------------------------------------------------------- |
-| Sci-kit Learn              | [https://scikit-learn.org/stable/]()                                |
-| Weka                       | [https://www.cs.waikato.ac.nz/ml/weka/]()                           |
-| Kaggle ML Competitions     | [https://www.kaggle.com/]()                                         |
-| Stanford ML Projects       | [https://cs229.stanford.edu/projects2016.html]()                    |
-| Stanford ML Project Ideas  | [https://cs229.stanford.edu/projectIdeas_2012.html]()               |
-| UCI ML Repository          | [https://archive.ics.uci.edu/ml/index.php]()                        |
+
+| Resource | URL |
+| - | - |
+| Sci-kit Learn | [https://scikit-learn.org/stable/]() |
+| Weka | [https://www.cs.waikato.ac.nz/ml/weka/]() |
+| Kaggle ML Competitions | [https://www.kaggle.com/]() |
+| Stanford ML Projects | [https://cs229.stanford.edu/projects2016.html]() |
+| Stanford ML Project Ideas | [https://cs229.stanford.edu/projectIdeas_2012.html]() |
+| UCI ML Repository | [https://archive.ics.uci.edu/ml/index.php]() |
 | Getting Started with LaTeX | [https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html]() |
