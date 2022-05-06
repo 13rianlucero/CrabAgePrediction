@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>notebook.md</title>
+<title>README.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -418,7 +418,7 @@ blockquote {
 </head>
 <body>
     <div class="content-wrapper">
-        <nav class="table-of-contents"><ol><li><a href="#crabageprediction">CrabAgePrediction</a></li><li><a href="#overview">Overview</a><ol><li><a href="#1.-abstract">1. Abstract</a><ol><li><a href="#paper-summary-%E2%9C%94%EF%B8%8F">Paper Summary ✔️</a></li></ol></li><li><a href="#2.-introduction">2. Introduction</a></li><li><a href="#3.-background">3. Background</a><ol><li><a href="#process-activities-%E2%9C%94%EF%B8%8F">Process Activities ✔️</a></li><li><a href="#models-%E2%9C%94%EF%B8%8F">Models ✔️</a></li><li><a href="#analysis-%E2%9C%94%EF%B8%8F">Analysis ✔️</a></li></ol></li><li><a href="#4.-methods">4. Methods</a><ol><li><a href="#approach-%E2%9C%94%EF%B8%8F">Approach ✔️</a></li><li><a href="#key-contributions-%E2%9C%94%EF%B8%8F">Key Contributions ✔️</a></li></ol></li><li><a href="#5.-experiments">5. Experiments</a><ol><li><a href="#prediction-system-development-workflow-%E2%9C%94%EF%B8%8F">Prediction System Development Workflow ✔️</a></li><li><a href="#predicition-model-workflow-%E2%9C%94%EF%B8%8F">Predicition Model Workflow ✔️</a></li><li><a href="#code-%E2%9C%94%EF%B8%8F">Code ✔️</a></li></ol></li><li><a href="#6.-conclusion">6. Conclusion</a><ol><li><a href="#summary-of-results-%E2%9C%94%EF%B8%8F">Summary of Results ✔️</a></li><li><a href="#future-work-%E2%9C%94%EF%B8%8F">Future work ✔️</a></li></ol></li><li><a href="#7.-references">7. References</a><ol><li><a href="#links-%E2%9C%94%EF%B8%8F">Links ✔️</a></li></ol></li><li><a href="#code">Code</a></li></ol></li></ol></nav><h1 id="crabageprediction" id="crabageprediction">CrabAgePrediction</h1>
+        <nav class="table-of-contents"><ol><li><a href="#crabageprediction">CrabAgePrediction</a></li><li><a href="#overview">Overview</a><ol><li><a href="#1.-abstract">1. Abstract</a><ol><li><a href="#paper-summary-%E2%9C%94%EF%B8%8F">Paper Summary ✔️</a></li></ol></li><li><a href="#2.-introduction">2. Introduction</a></li><li><a href="#3.-background">3. Background</a><ol><li><a href="#process-activities-%E2%9C%94%EF%B8%8F">Process Activities ✔️</a></li><li><a href="#models-%E2%9C%94%EF%B8%8F">Models ✔️</a></li><li><a href="#analysis-%E2%9C%94%EF%B8%8F">Analysis ✔️</a></li></ol></li><li><a href="#4.-methods">4. Methods</a><ol><li><a href="#approach-%E2%9C%94%EF%B8%8F">Approach ✔️</a></li><li><a href="#key-contributions-%E2%9C%94%EF%B8%8F">Key Contributions ✔️</a></li></ol></li><li><a href="#5.-experiments">5. Experiments</a><ol><li><a href="#prediction-system-development-workflow-%E2%9C%94%EF%B8%8F">Prediction System Development Workflow ✔️</a></li><li><a href="#predicition-model-workflow-%E2%9C%94%EF%B8%8F">Predicition Model Workflow ✔️</a></li><li><a href="#code-%E2%9C%94%EF%B8%8F">Code ✔️</a></li></ol></li><li><a href="#6.-conclusion">6. Conclusion</a><ol><li><a href="#summary-of-results-%E2%9C%94%EF%B8%8F">Summary of Results ✔️</a></li><li><a href="#future-work-%E2%9C%94%EF%B8%8F">Future work ✔️</a></li></ol></li><li><a href="#7.-references">7. References</a><ol><li><a href="#links-%E2%9C%94%EF%B8%8F">Links ✔️</a></li></ol></li><li><a href="#code">Code</a><ol><li><a href="#proposal-information">Proposal Information</a></li></ol></li><li><a href="#helpful-resources-for-the-project">Helpful Resources for the Project</a></li></ol></li><li><a href="#crabageprediction-1">CrabAgePrediction</a></li></ol></nav><h1 id="crabageprediction" id="crabageprediction">CrabAgePrediction</h1>
 <p><strong>CLASS:</strong>  <code>CPSC-483 Machine Learning Section-02</code></p>
 <p><strong>LAST UPDATE:</strong>  <code>May 5, 2022</code></p>
 <p><strong>PROJECT NAME:</strong> <code>Crab Age Prediction</code></p>
@@ -524,42 +524,7 @@ blockquote {
 <blockquote>
 <h2 id="5.-experiments" id="5-experiments"><strong>5. Experiments</strong></h2>
 <h6 id="prediction-system-development-workflow-%E2%9C%94%EF%B8%8F" id="prediction-system-development-workflow">Prediction System Development Workflow ✔️</h6>
-<pre class='hljs'><code><div>graph TD
-
-A[Problem Domain: Age Prediction of Crabs]
-B[Data Representation: Physical Attribute Values]
-C[Objective Function: Average Error Rate on Training Crab Data]
-D[Evalutation: Average Error Rate on Test Crab Data]
-E[Learning Algorithm: KNN, MLR, SVM]
-
-F[Predictive Model: KNN Model]
-G[Predictive Model: MLR Model]
-H[Predictive Model: SVM Model]
-
-I[Prediction System: Aggregate Model Results]
-J[Useful Predictions: Low Bias, Low Variance]
-K[Domain Insights: Types of Crabs]
-
-A -- Discrete and Continuous --&gt; B
-A -- Training dataset --&gt; C
-A -- Test dataset --&gt; D
-
-B --&gt; E
-C --&gt; E 
-D --&gt; E
-
-E --&gt; F
-E --&gt; G 
-E --&gt; H
-
-F --&gt; I
-G --&gt; I
-H --&gt; I
-
-I --&gt; J
-I --&gt; K
-
-</div></code></pre>
+<p><img src="image/README/1651798210121.png" alt="1651798210121.png"></p>
 <h6 id="predicition-model-workflow-%E2%9C%94%EF%B8%8F" id="predicition-model-workflow">Predicition Model Workflow ✔️</h6>
 <table>
 <thead>
@@ -704,132 +669,283 @@ I --&gt; K
 <p>[4] <a href="https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html">https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html</a></p>
 <p>[5] <a href="https://github.com/krishnaik06/Multiple-Linear-Regression">https://github.com/krishnaik06/Multiple-Linear-Regression</a></p>
 <p>[6] <a href="https://github.com/13rianlucero/CrabAgePrediction">https://github.com/13rianlucero/CrabAgePrediction</a></p>
-<hr>
+<p>__</p>
 </blockquote>
-<hr>
+<p>__</p>
 </blockquote>
-<hr>
+<p>__</p>
 </blockquote>
-<hr>
+<p>__</p>
 </blockquote>
-<hr>
+<p>__</p>
 </blockquote>
-<hr>
+<p>__</p>
 </blockquote>
-<hr>
+<p>__</p>
 </blockquote>
 <hr>
 <h2 id="code" id="code">Code</h2>
-<pre class='hljs'><code><div><span class="hljs-keyword">import</span> pandas
+<pre class='hljs'><code><div>
+<span class="hljs-keyword">import</span> pandas
+
 <span class="hljs-keyword">import</span> numpy
+
 <span class="hljs-keyword">from</span> scipy <span class="hljs-keyword">import</span> stats
+
 <span class="hljs-keyword">from</span> matplotlib <span class="hljs-keyword">import</span> pyplot <span class="hljs-keyword">as</span> plt
+
 <span class="hljs-keyword">from</span> sklearn.model_selection <span class="hljs-keyword">import</span> train_test_split
+
 <span class="hljs-keyword">from</span> sklearn.neighbors <span class="hljs-keyword">import</span> KNeighborsClassifier
+
 <span class="hljs-keyword">from</span> sklearn <span class="hljs-keyword">import</span> svm
+
 <span class="hljs-keyword">from</span> sklearn.linear_model <span class="hljs-keyword">import</span> LinearRegression
+
 <span class="hljs-keyword">from</span> sklearn.metrics <span class="hljs-keyword">import</span> r2_score
 
+
 data = pandas.read_csv(<span class="hljs-string">r&quot;CrabAgePrediction.csv&quot;</span>).dropna(axis=<span class="hljs-number">0</span>)
+
 <span class="hljs-built_in">print</span>(data.columns)
-data[<span class="hljs-string">&quot;SexValue&quot;</span>] = <span class="hljs-number">0</span> <span class="hljs-comment">#create a new column</span>
+
+data[<span class="hljs-string">&quot;SexValue&quot;</span>] =<span class="hljs-number">0</span><span class="hljs-comment">#create a new column</span>
+
 
 <span class="hljs-keyword">for</span> index, row <span class="hljs-keyword">in</span> data.iterrows():
-    <span class="hljs-comment">#convert male or female to a numerical value     Male=1, Female=2, Indeterminate=1.5</span>
-    <span class="hljs-keyword">if</span> row[<span class="hljs-string">&quot;Sex&quot;</span>] == <span class="hljs-string">&quot;M&quot;</span>:
-        data.iloc[index, <span class="hljs-number">9</span>] = <span class="hljs-number">1</span>
-    <span class="hljs-keyword">elif</span> row[<span class="hljs-string">&quot;Sex&quot;</span>] == <span class="hljs-string">&quot;F&quot;</span>:
-        data.iloc[index, <span class="hljs-number">9</span>] = <span class="hljs-number">2</span>
-    <span class="hljs-keyword">else</span>:
-        data.iloc[index, <span class="hljs-number">9</span>] = <span class="hljs-number">1.5</span>
+
+<span class="hljs-comment">#convert male or female to a numerical value     Male=1, Female=2, Indeterminate=1.5</span>
+
+<span class="hljs-keyword">if</span> row[<span class="hljs-string">&quot;Sex&quot;</span>] ==<span class="hljs-string">&quot;M&quot;</span>:
+
+        data.iloc[index, <span class="hljs-number">9</span>] =<span class="hljs-number">1</span>
+
+<span class="hljs-keyword">elif</span> row[<span class="hljs-string">&quot;Sex&quot;</span>] ==<span class="hljs-string">&quot;F&quot;</span>:
+
+        data.iloc[index, <span class="hljs-number">9</span>] =<span class="hljs-number">2</span>
+
+<span class="hljs-keyword">else</span>:
+
+        data.iloc[index, <span class="hljs-number">9</span>] =<span class="hljs-number">1.5</span>
+
 
 <span class="hljs-comment">#putting all our data together and dropping Sex for SexValue</span>
+
 data = data[[<span class="hljs-string">&quot;SexValue&quot;</span>, <span class="hljs-string">&quot;Length&quot;</span>, <span class="hljs-string">&quot;Diameter&quot;</span>, <span class="hljs-string">&quot;Height&quot;</span>, <span class="hljs-string">&quot;Weight&quot;</span>, <span class="hljs-string">&quot;Shucked Weight&quot;</span>, <span class="hljs-string">&quot;Viscera Weight&quot;</span>, <span class="hljs-string">&quot;Shell Weight&quot;</span>, <span class="hljs-string">&quot;Age&quot;</span>]]
+
 X = data[[<span class="hljs-string">&quot;Length&quot;</span>, <span class="hljs-string">&quot;Diameter&quot;</span>, <span class="hljs-string">&quot;Height&quot;</span>, <span class="hljs-string">&quot;Weight&quot;</span>, <span class="hljs-string">&quot;Shucked Weight&quot;</span>, <span class="hljs-string">&quot;Viscera Weight&quot;</span>, <span class="hljs-string">&quot;Shell Weight&quot;</span>]]
+
 y = data[[<span class="hljs-string">&quot;Age&quot;</span>]]
 
+
 <span class="hljs-comment">#Pearson correlation for every feature</span>
+
 col_cor = stats.pearsonr(data[<span class="hljs-string">&quot;SexValue&quot;</span>], y)
+
 col1_cor = stats.pearsonr(data[<span class="hljs-string">&quot;Length&quot;</span>], y)
+
 col2_cor = stats.pearsonr(data[<span class="hljs-string">&quot;Diameter&quot;</span>], y)
+
 col3_cor = stats.pearsonr(data[<span class="hljs-string">&quot;Height&quot;</span>], y)
+
 col4_cor = stats.pearsonr(data[<span class="hljs-string">&quot;Weight&quot;</span>], y)
+
 col5_cor = stats.pearsonr(data[<span class="hljs-string">&quot;Shucked Weight&quot;</span>], y)
+
 col6_cor = stats.pearsonr(data[<span class="hljs-string">&quot;Viscera Weight&quot;</span>], y)
+
 col7_cor = stats.pearsonr(data[<span class="hljs-string">&quot;Shell Weight&quot;</span>], y)
+
 <span class="hljs-built_in">print</span>(col_cor)
+
 <span class="hljs-built_in">print</span>(col1_cor)
+
 <span class="hljs-built_in">print</span>(col2_cor)
+
 <span class="hljs-built_in">print</span>(col3_cor)
+
 <span class="hljs-built_in">print</span>(col4_cor)
+
 <span class="hljs-built_in">print</span>(col5_cor)
+
 <span class="hljs-built_in">print</span>(col6_cor)
+
 <span class="hljs-built_in">print</span>(col7_cor)
 
+
 <span class="hljs-comment">#split the data into test and train set</span>
+
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=<span class="hljs-number">0.3</span>, random_state=<span class="hljs-number">132</span>)
 
+
 <span class="hljs-comment">#n_neighbors plot</span>
+
 error_rate = []
+
 y_test2 = numpy.ravel(y_test)
-<span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">31</span>):
+
+<span class="hljs-keyword">for</span> k inrange(<span class="hljs-number">1</span>, <span class="hljs-number">31</span>):
+
     neigh = KNeighborsClassifier(n_neighbors=k)
+
     neigh.fit(X_train, numpy.ravel(y_train))
+
     knn_predict = neigh.predict(X_test)
-    error_knn = <span class="hljs-number">0</span>
-    <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-number">1168</span>):
-        error_knn += <span class="hljs-built_in">abs</span>(knn_predict[x] - y_test2[x])
+
+    error_knn =<span class="hljs-number">0</span>
+
+<span class="hljs-keyword">for</span> x inrange(<span class="hljs-number">0</span>, <span class="hljs-number">1168</span>):
+
+        error_knn +=<span class="hljs-built_in">abs</span>(knn_predict[x] - y_test2[x])
+
     error_rate.append(error_knn/<span class="hljs-number">1169</span>)
 
+
 plt.plot(<span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">31</span>), error_rate)
+
 plt.xlabel(<span class="hljs-string">&quot;n_neighbors&quot;</span>)
+
 plt.ylabel(<span class="hljs-string">&quot;error_rate&quot;</span>)
+
 plt.title(<span class="hljs-string">&quot;Average error vs n_neighbors&quot;</span>)
+
 plt.show()
 
+
 <span class="hljs-comment">#KNN</span>
+
 neigh = KNeighborsClassifier(n_neighbors=<span class="hljs-number">20</span>)
+
 neigh.fit(X_train, numpy.ravel(y_train))
+
 knn_predict = neigh.predict(X_test)
 
+
 <span class="hljs-comment">#Multiple Linear Regression</span>
+
 regressor = LinearRegression()
+
 regressor.fit(X_train, y_train)
+
 y_pred = regressor.predict(X_test)
+
 score = r2_score(y_test,y_pred)
 
 
+
 <span class="hljs-comment">#SVR</span>
+
 regr = svm.SVR()
+
 regr.fit(X_train, numpy.ravel(y_train))
+
 regr_predict = regr.predict(X_test)
 
+
 <span class="hljs-comment"># #plot the predicted age against the actual age for the test set</span>
+
 plt.plot(<span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">1169</span>), knn_predict)
+
 plt.plot(<span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">1169</span>), y_pred)
+
 plt.plot(<span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">1169</span>), regr_predict)
+
 plt.plot(<span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">1169</span>), numpy.ravel(y_test))
+
 plt.xlim([<span class="hljs-number">0</span>, <span class="hljs-number">50</span>])
 
+
 <span class="hljs-comment">#plt.xlim([60, 90])</span>
+
 plt.legend([<span class="hljs-string">&quot;KNN Predicted Age&quot;</span>, <span class="hljs-string">&quot;LR Predicted Age&quot;</span>, <span class="hljs-string">&quot;SVR Predicted Age&quot;</span>,  <span class="hljs-string">&quot;Actual Age&quot;</span>])
+
 plt.ylabel(<span class="hljs-string">&quot;Age in months&quot;</span>)
+
 plt.title(<span class="hljs-string">&quot;Predicted vs Actual Crab Age&quot;</span>)
+
 plt.show()
 
-error_knn = <span class="hljs-number">0</span>
-error_mlr = <span class="hljs-number">0</span>
-error_svr = <span class="hljs-number">0</span>
+
+error_knn =<span class="hljs-number">0</span>
+
+error_mlr =<span class="hljs-number">0</span>
+
+error_svr =<span class="hljs-number">0</span>
+
 y_test2 = numpy.ravel(y_test)
-<span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">0</span>, <span class="hljs-number">1168</span>):
-    error_knn += <span class="hljs-built_in">abs</span>(knn_predict[x] - y_test2[x])
-    error_mlr += <span class="hljs-built_in">abs</span>(y_pred[x] - y_test2[x])
-    error_svr += <span class="hljs-built_in">abs</span>(regr_predict[x] - y_test2[x])
+
+<span class="hljs-keyword">for</span> x inrange(<span class="hljs-number">0</span>, <span class="hljs-number">1168</span>):
+
+    error_knn +=<span class="hljs-built_in">abs</span>(knn_predict[x] - y_test2[x])
+
+    error_mlr +=<span class="hljs-built_in">abs</span>(y_pred[x] - y_test2[x])
+
+    error_svr +=<span class="hljs-built_in">abs</span>(regr_predict[x] - y_test2[x])
+
 
 <span class="hljs-built_in">print</span> (error_knn/<span class="hljs-number">1169</span>)
+
 <span class="hljs-built_in">print</span> (error_mlr/<span class="hljs-number">1169</span>)
+
 <span class="hljs-built_in">print</span> (error_svr/<span class="hljs-number">1169</span>)
+
 </div></code></pre>
+<h3 id="proposal-information" id="proposal-information">Proposal Information</h3>
+<blockquote>
+<ul>
+<li>Deadline: Tuesday, March 15 @ 11:59 pm</li>
+<li>Email subject: <strong>CPSC 483 + Section Number + Project Proposal</strong></li>
+<li>Send me, Neda, Nino via email</li>
+<li>Submit via email. Emails:
+<ul>
+<li><a href="mailto:kasood@fullerton.edu">kasood@fullerton.edu</a></li>
+<li><a href="mailto:neda.khanaki@csu.fullerton.edu">neda.khanaki@csu.fullerton.edu</a></li>
+<li><a href="mailto:nvilagi@csu.fullerton.edu">nvilagi@csu.fullerton.edu</a></li>
+</ul>
+</li>
+</ul>
+<p>The submission will be followed by a project check-in due on April 15 @ 11:59 pm.</p>
+</blockquote>
+<h2 id="helpful-resources-for-the-project" id="helpful-resources-for-the-project">Helpful Resources for the Project</h2>
+<table>
+<thead>
+<tr>
+<th>Resource</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sci-kit Learn</td>
+<td><a href="">https://scikit-learn.org/stable/</a></td>
+</tr>
+<tr>
+<td>Weka</td>
+<td><a href="">https://www.cs.waikato.ac.nz/ml/weka/</a></td>
+</tr>
+<tr>
+<td>Kaggle ML Competitions</td>
+<td><a href="">https://www.kaggle.com/</a></td>
+</tr>
+<tr>
+<td>Stanford ML Projects</td>
+<td><a href="">https://cs229.stanford.edu/projects2016.html</a></td>
+</tr>
+<tr>
+<td>Stanford ML Project Ideas</td>
+<td><a href="">https://cs229.stanford.edu/projectIdeas_2012.html</a></td>
+</tr>
+<tr>
+<td>UCI ML Repository</td>
+<td><a href="">https://archive.ics.uci.edu/ml/index.php</a></td>
+</tr>
+<tr>
+<td>Getting Started with LaTeX</td>
+<td><a href="">https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html</a></td>
+</tr>
+</tbody>
+</table>
+<h1 id="crabageprediction-1" id="crabageprediction">CrabAgePrediction</h1>
 
     </div>
 </body>
