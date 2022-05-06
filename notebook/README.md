@@ -9,7 +9,7 @@
 
 **CLASS:**  `CPSC-483 Machine Learning Section-02`
 
-**LAST UPDATE:**  `May 6, 2022`
+**LAST UPDATE:**  `May 5, 2022`
 
 **PROJECT NAME:** `Crab Age Prediction`
 
@@ -153,7 +153,7 @@
 >>>>>>>
 >>>>>>> ###### Links ✔️
 >>>>>>>
->>>>>>> [1]      [https://www.kaggle.com/datasets/sidhus/crab-age-prediction](https://www.kaggle.com/datasets/sidhus/crab-age-prediction)
+>>>>>>> [1] (https://www.kaggle.com/datasets/sidhus/crab-age-prediction](https://www.kaggle.com/datasets/sidhus/crab-age-prediction)
 >>>>>>>
 >>>>>>> [2] [https://scikit-learn.org/stable/modules/svm.html](https://scikit-learn.org/stable/modules/svm.html)
 >>>>>>>
@@ -396,7 +396,7 @@ print (error_svr/1169)
 
 ```
 
-# Proposal Information
+### Proposal Information
 
 > * Deadline: Tuesday, March 15 @ 11:59 pm
 > * Email subject: **CPSC 483 + Section Number + Project Proposal**
@@ -408,7 +408,7 @@ print (error_svr/1169)
 >
 > The submission will be followed by a project check-in due on April 15 @ 11:59 pm.
 
-# Helpful Resources for the Project
+## Helpful Resources for the Project
 
 
 | Resource | URL |
@@ -421,4 +421,4 @@ print (error_svr/1169)
 | UCI ML Repository | [https://archive.ics.uci.edu/ml/index.php]() |
 | Getting Started with LaTeX | [https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html]() |
 
----
+# CrabAgePrediction
