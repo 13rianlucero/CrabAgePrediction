@@ -1,3 +1,13 @@
+<div align="center" class="inner">
+    <span>
+        <img src="https://img.itch.zone/aW1nLzU4NDQxNDcuZ2lm/original/FZ4A38.gif" height=100px alt="html" style="vertical-align:top;margin:3px" />
+        <img src="https://i.pinimg.com/originals/08/07/18/080718c3c5f3a56249a2ee3a825221bd.gif" height=100px alt="html" style="vertical-align:top;margin:3px" />
+        <img src="https://i.pinimg.com/originals/f8/d5/8b/f8d58bfc212f9f5aad2d00d43371ce29.gif" height=100px alt="html" style="vertical-align:top;margin:3px" />
+    </span>
+</div>
+
+---
+
 # CrabAgePrediction
 
 <p>
@@ -119,12 +129,12 @@
 
 >>>>> ---
 >>>>>
->>>>> ##### Prediction System Development Workflow ✔️
+>>>>> ### Prediction System Development Workflow ✔️
 >>>>>
 >>>>> ![1651798210121.png](image/README/1651798210121.png)
 >>>>> `<br />`
 >>>>>
->>>>> ##### Predicition Model Workflow ✔️
+>>>>> ### Predicition Model Workflow ✔️
 >>>>>
 >>>>>
 >>>>> | KNN | MLR | SVM |
@@ -236,41 +246,10 @@
 >
 > ---
 
-`<br /><br />`
---------------
-
-`<br /><br />`
 
 # Code
 
-**[CONTENTS:]()**
 
-**[1-INITIAL_SETUP]()**
-
-- **Import Libraries**
-- **Import Dataset**
-
-**[2-DATA-PREPROCESSING]()**
-
-- **Convert Sex Categorical value into Numerical Value**
-- **Pearson correlation for every feature**
-
-**[3-TRAIN_TEST_SPLIT]()**
-
-- Split the data into* Test set & Train set
-- Determine value for K in KNN Model
-
-**[4-BUILD_AND_TRAIN_MODELS)**
-
-- Build and Train
-
-**[6-PLOT_EACH_INDIVIDUAL_MODEL]()**:
-
-* KNN2.
-* MLR
-* SVR
-
-**[MAIN.PY]()**
 
 ```python
 
