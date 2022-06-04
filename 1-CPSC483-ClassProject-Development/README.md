@@ -1,24 +1,17 @@
-# CrabAgePrediction
+<h1 align="center">README.md -- Version 2.0</h1>
+<sub align="center">~ CPSC483-ClassProject-Submission Version of the README.md of CrabAgePrediction Repository ~</sub>
 
-<html>
-<head>
-<style>
-    body {
-     background-image: url('https://camo.githubusercontent.com/7747877b42d0fd3fe990b195cc805fef5e49057fb6462621e81c7a80df319a5f/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f35332f61642f39322f35336164393239323133663539633733393262663932363035383638303231662e676966');
-    }
-</style>
-</head>
-<body>
-
-<h2>Background Image</h2>
-
-<p>By default, the background image will repeat itself if it is smaller than the element where it is specified, in this case the body element.</p>
-
-</body>
-</html>
-
+<div align="center" class="inner">
+    <span>
+        <img src="https://img.itch.zone/aW1nLzU4NDQxNDcuZ2lm/original/FZ4A38.gif" height=100px alt="html" style="vertical-align:top;margin:3px" />
+        <img src="https://i.pinimg.com/originals/08/07/18/080718c3c5f3a56249a2ee3a825221bd.gif" height=100px alt="html" style="vertical-align:top;margin:3px" />
+        <img src="https://i.pinimg.com/originals/f8/d5/8b/f8d58bfc212f9f5aad2d00d43371ce29.gif" height=100px alt="html" style="vertical-align:top;margin:3px" />
+    </span>
+</div>
 
 ---
+
+# CrabAgePrediction
 
 <p>
     <img src="https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white" alt=""/>
@@ -37,7 +30,7 @@
 
 
 | Name | Email | Student |
-| - | - | - |
+| :- | :- | :- |
 | Brian Lucero | 13rianlucero@csu.fullerton.edu | Undergraduate |
 | Justin Heng | justinheng@csu.fullerton.edu | Graduate |
 
@@ -49,22 +42,39 @@
 
 # Overview
 
-> ## **1. Abstract**
+## **1. Abstract**
+
+---
+
+> ---
 >
-> ###### Paper Summary ✔️
+> ### Paper Summary ✔️
 >
-> Machine learning can be used to predict the age of crabs. It can be more accurate than simply weighing a crab to estimate its age. Several different models can be used, though support vector regression was found to be the most accurate in this experiment.
 >
->> ## **2. Introduction**
+> | Machine learning can be used to predict the age of crabs. It can be more accurate than simply weighing a crab to estimate its age. Several different models can be used, though support vector regression was found to be the most accurate in this experiment. |
+> | :- |
+>
+> <br />
+
+## **2. Introduction**
+
+---
+
+>> ---
 >>
 >>
 >> | The Problem  ✔️ | Why it's important?  ✔️ | Our Solution Strategy  ✔️ |
 >> | :- | :- | :- |
 >> | <br /><br />*It is quite difficult to determine a crab's age due to their molting cycles which happen throughout their whole life. Essentially, the failure to harvest at an ideal age, increases cost and crab lives go to waste.* | <br /><br />*Beyond a certain age, there is negligible growth in crab's physical characteristics and hence, it is important to time the harvesting to reduce cost and increase profit.* | <br /><br />Prepare crab data and use it to train several machine learning models. Thus, given certain physcial chraracteristics and the corresponding values, the ML models will accurately determine the age of the crabs. |
 >>
->>> ## **3. Background**
+>> `<br /><br />`
+>>
+
+## **3. Background**
+
+>>> ---
 >>>
->>> ###### **Process Activities ✔️**
+>>> ### **Process Activities ✔️**
 >>>
 >>> - Feature Selection & Representation
 >>> - Evaluation on variety of methods
@@ -81,25 +91,31 @@
 >>> - Feature Selection
 >>> - Choose ML Models
 >>>
->>> ###### Models ✔️
+>>> ### Models ✔️
 >>>
 >>> - K-Nearest Neighbours (KNN)
 >>> - Multiple Linear Regression (MLR)
 >>> - Support Vector Machine (SVM)
 >>>
->>> ###### Analysis ✔️
+>>> ### Analysis ✔️
 >>>
 >>> - Evaluate Results
 >>> - Performance Metrics
 >>> - Compare ML Models using Metrics
 >>>
->>>> ## **4. Methods**
+>>> `<br /><br />`
+>>>
+>>
+
+## **4. Methods**
+
+>>>> ---
 >>>>
->>>> ###### Approach ✔️
+>>>> ### Approach ✔️
 >>>>
 >>>> - Prediction System using 3 main ML Models
 >>>>
->>>> ###### Key Contributions ✔️
+>>>> ### Key Contributions ✔️
 >>>>
 >>>> - Justin
 >>>>   - `KNN`
@@ -107,13 +123,21 @@
 >>>> - Brian
 >>>>   - `MLR`
 >>>>
->>>>> ## **5. Experiments**
+>>>> <br />
+>>>>
+>>>
+>>
+
+## **5. Experiments**
+
+>>>>> ---
 >>>>>
->>>>> ###### Prediction System Development Workflow ✔️
+>>>>> ### Prediction System Development Workflow ✔️
 >>>>>
 >>>>> ![1651798210121.png](image/README/1651798210121.png)
+>>>>> `<br />`
 >>>>>
->>>>> ###### Predicition Model Workflow ✔️
+>>>>> ### Predicition Model Workflow ✔️
 >>>>>
 >>>>>
 >>>>> | KNN | MLR | SVM |
@@ -135,11 +159,21 @@
 >>>>> | Use model to refine the results | Use model to refine the results | Use model to refine the results |
 >>>>> | Draw Conclusions | Draw Conclusions | Draw Conclusions |
 >>>>>
->>>>> ###### Code ✔️
+>>>>> ### ***Code*** ✔️
 >>>>>
->>>>>> ## **6. Conclusion**
+>>>>> `Included in the Code Cells Further below this one`
+>>>>>
+>>>>> <br />
+>>>>>
+>>>>
+>>>
+>>
+
+## **6. Conclusion**
+
+>>>>>> ---
 >>>>>>
->>>>>> ###### Summary of Results ✔️
+>>>>>> ### ***Summary of Results*** ✔️
 >>>>>>
 >>>>>> Overall, the models were able to predict the age of crabs reasonably well. On average, the predictions were off by about 1.5 months. Although support vector regression performed slightly better than the other two models, it was still close enough that any of the models could be used with satisfactory results.
 >>>>>>
@@ -156,13 +190,21 @@
 >>>>>> | K-nearest Neighbor | ML | 1.610 |
 >>>>>> | Multiple Linear Regression | ML | 1.560 |
 >>>>>>
->>>>>> ###### Future work ✔️
+>>>>>> ### ***Future work*** ✔️
 >>>>>>
 >>>>>> Predicting the age of a crab becomes less accurate the longer a crab has matured. To circumvent this, the dataset could be further preprocessed so that any crab over the age of 12 months will be set to 12 months.
 >>>>>>
 >>>>>> This would greatly increase the accuracy of the machine learning models though the models would no longer be able to predict any ages over 12 months. Since the purpose is to find which crabs are harvestable, this may be a good compromise.
+>>>>>> `<br /><br />`
 >>>>>>
->>>>>>> ## **7. References**
+>>>>>
+>>>>
+>>>
+>>
+
+## **7. References**
+
+>>>>>>> ---
 >>>>>>>
 >>>>>>> <p align="center">
 >>>>>>>    <img src="https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white" alt=""/>
@@ -171,43 +213,46 @@
 >>>>>>> <img src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green" alt="" />
 >>>>>>> </p>
 >>>>>>>
->>>>>>> ###### Links ✔️
+>>>>>>> ### ***Links ✔️***
 >>>>>>>
->>>>>>> [1] (https://www.kaggle.com/datasets/sidhus/crab-age-prediction](https://www.kaggle.com/datasets/sidhus/crab-age-prediction)
+>>>>>>> [1]      [https://www.kaggle.com/datasets/sidhus/crab-age-prediction](https://www.kaggle.com/datasets/sidhus/crab-age-prediction)
 >>>>>>>
->>>>>>> [2] [https://scikit-learn.org/stable/modules/svm.html](https://scikit-learn.org/stable/modules/svm.html)
+>>>>>>> [2]     [https://scikit-learn.org/stable/modules/svm.html](https://scikit-learn.org/stable/modules/svm.html)
 >>>>>>>
->>>>>>> [3] [https://repository.library.noaa.gov/view/noaa/16273/noaa_16273_DS4.pdf](https://repository.library.noaa.gov/view/noaa/16273/noaa_16273_DS4.pdf)
+>>>>>>> [3]      [https://repository.library.noaa.gov/view/noaa/16273/noaa_16273_DS4.pdf](https://repository.library.noaa.gov/view/noaa/16273/noaa_16273_DS4.pdf)
 >>>>>>>
->>>>>>> [4] [https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html](https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html)
+>>>>>>> [4]     [https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html](https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html)
 >>>>>>>
->>>>>>> [5] [https://github.com/krishnaik06/Multiple-Linear-Regression](https://github.com/krishnaik06/Multiple-Linear-Regression)
+>>>>>>> [5]     [https://github.com/krishnaik06/Multiple-Linear-Regression](https://github.com/krishnaik06/Multiple-Linear-Regression)
 >>>>>>>
->>>>>>> [6] [https://github.com/13rianlucero/CrabAgePrediction](https://github.com/13rianlucero/CrabAgePrediction)
+>>>>>>> [6]     [https://github.com/13rianlucero/CrabAgePrediction](https://github.com/13rianlucero/CrabAgePrediction)
 >>>>>>>
->>>>>>> __
+>>>>>>> `<br /><br />`
+>>>>>>>
+>>>>>>> ---
 >>>>>>>
 >>>>>>
->>>>>> __
+>>>>>> ---
 >>>>>>
 >>>>>
->>>>> __
+>>>>> ---
 >>>>>
 >>>>
->>>> __
+>>>> ---
 >>>>
 >>>
->>> __
+>>> ---
 >>>
 >>
->> __
+>> ---
 >>
 >
-> __
+> ---
 
----
 
-## Code
+# Code
+
+
 
 ```python
 
@@ -415,33 +460,28 @@ print (error_mlr/1169)
 print (error_svr/1169)
 
 ```
-<body class="">
 
- ### Proposal Information
+# Proposal Information
 
- > * Deadline: Tuesday, March 15 @ 11:59 pm
- > * Email subject: **CPSC 483 + Section Number + Project Proposal**
- > * Send me, Neda, Nino via email
- > * Submit via email. Emails:
- >   - [kasood@fullerton.edu](mailto:kasood@fullerton.edu)
- >   - [neda.khanaki@csu.fullerton.edu](mailto:neda.khanaki@csu.fullerton.edu)
- >   - [nvilagi@csu.fullerton.edu](mailto:nvilagi@csu.fullerton.edu)
- >
- > The submission will be followed by a project check-in due on April 15 @ 11:59 pm.
+> * Deadline: Tuesday, March 15 @ 11:59 pm
+> * Email subject: **CPSC 483 + Section Number + Project Proposal**
+> * Send me, Neda, Nino via email
+> * Submit via email. Emails:
+>   - [kasood@fullerton.edu](mailto:kasood@fullerton.edu)
+>   - [neda.khanaki@csu.fullerton.edu](mailto:neda.khanaki@csu.fullerton.edu)
+>   - [nvilagi@csu.fullerton.edu](mailto:nvilagi@csu.fullerton.edu)
+>
+> The submission will be followed by a project check-in due on April 15 @ 11:59 pm.
 
- ## Helpful Resources for the Project
+# Helpful Resources for the Project
 
 
- | Resource | URL |
- | - | - |
- | Sci-kit Learn | [https://scikit-learn.org/stable/]() |
- | Weka | [https://www.cs.waikato.ac.nz/ml/weka/]() |
- | Kaggle ML Competitions | [https://www.kaggle.com/]() |
- | Stanford ML Projects | [https://cs229.stanford.edu/projects2016.html]() |
- | Stanford ML Project Ideas | [https://cs229.stanford.edu/projectIdeas_2012.html]() |
- | UCI ML Repository | [https://archive.ics.uci.edu/ml/index.php]() |
- | Getting Started with LaTeX | [https://faculty.math.illinois.edu/~hildebr/texlatex-start.html]() |
-
- # CrabAgePrediction
-
-</body>
+| Resource | URL |
+| - | - |
+| Sci-kit Learn | [https://scikit-learn.org/stable/]() |
+| Weka | [https://www.cs.waikato.ac.nz/ml/weka/]() |
+| Kaggle ML Competitions | [https://www.kaggle.com/]() |
+| Stanford ML Projects | [https://cs229.stanford.edu/projects2016.html]() |
+| Stanford ML Project Ideas | [https://cs229.stanford.edu/projectIdeas_2012.html]() |
+| UCI ML Repository | [https://archive.ics.uci.edu/ml/index.php]() |
+| Getting Started with LaTeX | [https://faculty.math.illinois.edu/~hildebr/tex/latex-start.html]() |
