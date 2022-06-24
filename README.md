@@ -17,13 +17,13 @@
     <img src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green" alt="" />
 </p>
 
-**CLASS:**  `CPSC-483 Machine Learning Section-02`
+CLASS:  `CPSC-483 Machine Learning Section-02`
 
-**LAST UPDATE:**  `May 5, 2022`
+LAST UPDATE:  `May 5, 2022`
 
-**PROJECT NAME:** `Crab Age Prediction`
+PROJECT NAME: `Crab Age Prediction`
 
-**PROJECT GROUP:**
+PROJECT GROUP: 
 
 
 | Name | Email | Student |
@@ -31,9 +31,16 @@
 | Brian Lucero | 13rianlucero@csu.fullerton.edu | Undergraduate |
 | Justin Heng | justinheng@csu.fullerton.edu | Graduate |
 
-**PROJECT PAPER:**   [Here](https://github.com/13rianlucero/CrabAgePrediction/blob/main/FirstDraft/Crab%20Age%20Prediction%20Paper.pdf)
+***CLASS SUBMISSION***
 
-**PROJECT GITHUB REPOSITORY:** [Here](https://github.com/13rianlucero/CrabAgePrediction)
+- **PROJECT GUIDELINES** [Here](https://github.com/13rianlucero/CrabAgePrediction/blob/main/1-CPSC483-ClassProject-Development/CPSC483ClassProjectInstructions.pdf)
+- **PROJECT PROPOSAL** [Here](https://github.com/13rianlucero/CrabAgePrediction/blob/main/1-CPSC483-ClassProject-Development/proposal/CPSC483-MLProjectProposal.pdf)
+- **PROJECT GITHUB REPOSITORY:** [Here](https://github.com/13rianlucero/CrabAgePrediction)
+- **PROJECT JUPYTER NOTEBOOK** [Here](https://github.com/13rianlucero/CrabAgePrediction/blob/main/2-CPSC483-ClassProject-Submission/Crab-Age-Prediction-JupyterNotebook.ipynb)
+- **PROJECT PAPER:**   [Here](https://github.com/13rianlucero/CrabAgePrediction/blob/main/1-CPSC483-ClassProject-Development/paper/Crab%20Age%20Prediction%20Paper.pdf)
+- **PROJECT PRESENTATION** [Here](https://youtu.be/2IMGdeu2SMg)
+
+**
 
 ---
 
