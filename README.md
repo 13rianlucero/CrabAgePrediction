@@ -17,9 +17,10 @@
     <img src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green" alt="" />
 </p>
 
+**CLASS:**          `CPSC-483 Machine Learning Section-02`
+**LAST UPDATE:**    `May 5, 2022`
+
 ```cpp
-CLASS:          CPSC-483 Machine Learning Section-02
-LAST UPDATE:    May 5, 2022
 PROJECT NAME:   Crab Age Prediction
 PROJECT GROUP: 
     1. Brian Lucero | 13rianlucero@csu.fullerton.edu | Undergraduate 
